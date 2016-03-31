@@ -10,5 +10,6 @@ package com.Monument;
  * @author dario.lwoloszin
  */
 public class test {
+    int x = 10;
     
 }
