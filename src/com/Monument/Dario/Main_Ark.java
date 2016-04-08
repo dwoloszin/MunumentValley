@@ -25,9 +25,8 @@ public class Main_Ark {
     
         GLCanvas canvas = new GLCanvas();
         canvas.addGLEventListener(new TorreArk.Renderer());
-        
-        
         frame.add(canvas);
+               
         frame.setSize(640, 480);
         animator = new Animator(canvas);
         frame.addWindowListener(new WindowAdapter(){
