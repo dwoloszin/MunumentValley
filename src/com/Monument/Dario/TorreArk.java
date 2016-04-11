@@ -331,6 +331,19 @@ public class TorreArk
             
             
             
+        // Trilha
+            gl.glPushMatrix();
+            gl.glTranslatef(0.0f, 0.01f, -6.0f);
+            gl.glBegin(GL.GL_QUADS);
+            gl.glColor3f(1.0f, 0.84f, 0.0f);
+            gl.glVertex3f(-2.0f, -0.5f, -1.0f);
+            gl.glVertex3f(-3.0f, -0.5f, -1.06f);
+            gl.glVertex3f(-3.0f, -0.5f, -12.56f);
+            gl.glVertex3f(-2.0f, -0.5f, -12.56f);
+            gl.glEnd();
+            gl.glPopMatrix();
+            
+            
             
         gl.glFlush();
       

@@ -5,7 +5,7 @@
  */
 package com.Monument.Dario;
 
-import static com.Monument.Dario.Quadrado.animator;
+import static com.Monument.Dario.TorreRei.animator;
 import com.sun.opengl.util.Animator;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;
@@ -24,8 +24,7 @@ public class Main {
 
     
         GLCanvas canvas = new GLCanvas();
-        canvas.addGLEventListener(new Quadrado.Renderer());
-        
+        canvas.addGLEventListener(new TorreRei.Renderer());
         
         frame.add(canvas);
         frame.setSize(640, 480);

@@ -5,7 +5,7 @@
  */
 package com.Monument.Dario;
 
-import static com.Monument.Dario.Quadrado.animator;
+import static com.Monument.Dario.TorreRei.animator;
 import com.sun.opengl.util.Animator;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;

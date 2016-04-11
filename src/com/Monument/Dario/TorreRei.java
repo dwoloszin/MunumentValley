@@ -10,7 +10,7 @@ import javax.media.opengl.GLDrawable;
 import javax.media.opengl.GLEventListener;
 import javax.media.opengl.glu.GLU;
 
-public class Quadrado
+public class TorreRei
 {
   static Animator animator = null;
   
@@ -35,7 +35,7 @@ public class Quadrado
       
       
       gl.glLoadIdentity();
-      gl.glTranslatef(1.5f, 0.0f, -6.0f);
+      gl.glTranslatef(0.0f, 0.0f, -8.0f);
       gl.glRotatef(rquad, 0.0f, 1.0f, 0.0f);
       gl.glBegin(GL.GL_QUADS);           	// Draw A Quad
       
@@ -82,7 +82,7 @@ public class Quadrado
         
                 
         //PARTE SUPERIOR DA TORRE (PARTE MAIS LARGA)
-        gl.glColor3f(0.12f, 0.56f, 1.0f);                       // Set The Color To Azul Furtivo
+        //gl.glColor3f(0.12f, 0.56f, 1.0f);                       // Set The Color To Azul Furtivo
         gl.glVertex3f( 1.0f*x, 1.0f,-1.0f*x);			// Top Right Of The Quad (Top)
         gl.glVertex3f(-1.0f*x, 1.0f,-1.0f*x);			// Top Left Of The Quad (Top)
         gl.glVertex3f(-1.0f*x, 1.0f, 1.0f*x);			// Bottom Left Of The Quad (Top)
@@ -111,6 +111,15 @@ public class Quadrado
         gl.glVertex3f(1.0f*x, 1.2f*x,   1.0f*x);                // Top Left Of The Quad (Right)
         gl.glVertex3f(1.0f*x, 0.905f*x, 1.0f*x);                // Bottom Left Of The Quad (Right)
         gl.glVertex3f(1.0f*x, 0.905f*x,-1.0f*x);		// Bottom Right Of The Quad (Right)
+        
+        
+        gl.glColor3f(0.12f, 0.56f, 1.0f);               // Set The Color To Azul Furtivo
+        gl.glVertex3f( 0.3f*x, 0.0f*x, 1.0f*x);		// Top Right Of The Quad (Front)
+        gl.glVertex3f(-0.3f*x, 0.0f*x, 1.0f*x);		// Top Left Of The Quad (Front)
+        gl.glVertex3f(-0.3f*x,-0.89f*x, 1.0f*x);	// Bottom Left Of The Quad (Front)
+        gl.glVertex3f( 0.3f*x,-0.89f*x, 1.0f*x);	// Bottom Right Of The Quad (Front)
+        
+        
         
         
       gl.glEnd();				// Done Drawing The Quad
