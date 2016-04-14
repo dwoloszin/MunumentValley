@@ -31,9 +31,7 @@ public class TorreRei
         gl.glLoadIdentity();
 
         // Move the "drawing cursor" around
-        gl.glTranslatef(-1.5f, 0.0f, -6.0f);
-      
-      
+      gl.glTranslatef(-1.5f, 0.0f, -6.0f);
       gl.glLoadIdentity();
       gl.glTranslatef(0.0f, 0.0f, -8.0f);
       gl.glRotatef(rquad, 0.0f, 1.0f, 0.0f);

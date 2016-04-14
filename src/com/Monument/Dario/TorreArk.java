@@ -283,7 +283,98 @@ public class TorreArk
         
         
         
+        //torre do rei
+      gl.glPushMatrix();
+      gl.glLoadIdentity();
+      gl.glTranslatef(0.0f, 0.3f, -8.0f);
+      gl.glRotatef(rquad, 0.0f, 1.0f, 0.0f);
+      gl.glBegin(GL.GL_QUADS);           	// Draw A Quad
+      
+        //gl.glColor3f(0.47f,0.53f,0.42f);			// Set The Color To Cinza
+        			// Bottom Right Of The Quad (Top)
+      
+        float x = 1.1f;
+      
+        /*gl.glColor3f(0.47f,0.53f,0.42f);			// Set The Color To Cinza
+        gl.glVertex3f( 1.0f, 1.0f,-1.0f);			// Top Right Of The Quad (Top)
+        gl.glVertex3f(-1.0f, 1.0f,-1.0f);			// Top Left Of The Quad (Top)
+        gl.glVertex3f(-1.0f, 1.0f, 1.0f);			// Bottom Left Of The Quad (Top)
+        gl.glVertex3f( 1.0f, 1.0f, 1.0f);			// Bottom Right Of The Quad (Top)*/
         
+        gl.glColor3f(0.83f,0.83f,0.83f);			// Set The Color To Cinza Claro
+        gl.glVertex3f( 1.0f,-1.0f, 1.0f);			// Top Right Of The Quad (Bottom)
+        gl.glVertex3f(-1.0f,-1.0f, 1.0f);			// Top Left Of The Quad (Bottom)
+        gl.glVertex3f(-1.0f,-1.0f,-1.0f);			// Bottom Left Of The Quad (Bottom)
+        gl.glVertex3f( 1.0f,-1.0f,-1.0f);			// Bottom Right Of The Quad (Bottom)
+
+        
+        gl.glVertex3f( 0.95f, 1.0f, 0.95f);			// Top Right Of The Quad (Front)
+        gl.glVertex3f(-0.95f, 1.0f, 0.95f);			// Top Left Of The Quad (Front)
+        gl.glVertex3f(-1.0f,-1.0f, 1.0f);			// Bottom Left Of The Quad (Front)
+        gl.glVertex3f( 1.0f,-1.0f, 1.0f);			// Bottom Right Of The Quad (Front)
+
+        
+        gl.glVertex3f( 0.95f, 1.0f,-0.95f);			// Top Right Of The Quad (Back)
+        gl.glVertex3f(-0.95f, 1.0f,-0.95f);			// Top Left Of The Quad (Back)
+        gl.glVertex3f(-1.0f, -1.0f,-1.0f);			// Bottom Left Of The Quad (Back)
+        gl.glVertex3f( 1.0f, -1.0f,-1.0f);			// Bottom Right Of The Quad (Back)
+
+        
+        gl.glVertex3f(-0.95f, 1.0f, 0.95f);			// Top Right Of The Quad (Left)
+        gl.glVertex3f(-0.95f, 1.0f,-0.95f);			// Top Left Of The Quad (Left)
+        gl.glVertex3f(-1.0f,-1.0f,-1.0f);			// Bottom Left Of The Quad (Left)
+        gl.glVertex3f(-1.0f,-1.0f, 1.0f);			// Bottom Right Of The Quad (Left)
+
+        
+        gl.glVertex3f( 0.95f, 1.0f,-0.95f);			// Top Right Of The Quad (Right)
+        gl.glVertex3f( 0.95f, 1.0f, 0.95f);			// Top Left Of The Quad (Right)
+        gl.glVertex3f( 1.0f,-1.0f, 1.0f);			// Bottom Left Of The Quad (Right)
+        gl.glVertex3f( 1.0f,-1.0f,-1.0f);			// Bottom Right Of The Quad (Right)
+        
+                
+        //PARTE SUPERIOR DA TORRE (PARTE MAIS LARGA)
+        //gl.glColor3f(0.12f, 0.56f, 1.0f);                       // Set The Color To Azul Furtivo
+        gl.glVertex3f( 1.0f*x, 1.0f,-1.0f*x);			// Top Right Of The Quad (Top)
+        gl.glVertex3f(-1.0f*x, 1.0f,-1.0f*x);			// Top Left Of The Quad (Top)
+        gl.glVertex3f(-1.0f*x, 1.0f, 1.0f*x);			// Bottom Left Of The Quad (Top)
+        gl.glVertex3f( 1.0f*x, 1.0f, 1.0f*x);                   // Bottom Right Of The Quad (Top)
+        
+
+        gl.glVertex3f( 1.0f*x, 1.2f*x,   1.0f*x);		// Top Right Of The Quad (Front)
+        gl.glVertex3f(-1.0f*x, 1.2f*x,   1.0f*x);		// Top Left Of The Quad (Front)
+        gl.glVertex3f(-1.0f*x, 0.905f*x, 1.0f*x);		// Bottom Left Of The Quad (Front)
+        gl.glVertex3f( 1.0f*x, 0.905f*x, 1.0f*x);		// Bottom Right Of The Quad (Front)
+        
+
+        gl.glVertex3f( 1.0f*x, 1.2f*x,  -1.0f*x);		// Top Right Of The Quad (Back)
+        gl.glVertex3f(-1.0f*x, 1.2f*x,  -1.0f*x);		// Top Left Of The Quad (Back)
+        gl.glVertex3f(-1.0f*x, 0.905f*x,-1.0f*x);		// Bottom Left Of The Quad (Back)
+        gl.glVertex3f( 1.0f*x, 0.905f*x,-1.0f*x);		// Bottom Right Of The Quad (Back)
+        
+        
+        gl.glVertex3f(-1.0f*x, 1.2f*x,   1.0f*x);		// Top Right Of The Quad (Left)
+        gl.glVertex3f(-1.0f*x, 1.2f*x,  -1.0f*x);		// Top Left Of The Quad (Left)
+        gl.glVertex3f(-1.0f*x, 0.905f*x,-1.0f*x);		// Bottom Left Of The Quad (Left)
+        gl.glVertex3f(-1.0f*x, 0.905f*x, 1.0f*x);		// Bottom Right Of The Quad (Left)
+        
+        
+        gl.glVertex3f(1.0f*x, 1.2f*x,  -1.0f*x);                // Top Right Of The Quad (Right)
+        gl.glVertex3f(1.0f*x, 1.2f*x,   1.0f*x);                // Top Left Of The Quad (Right)
+        gl.glVertex3f(1.0f*x, 0.905f*x, 1.0f*x);                // Bottom Left Of The Quad (Right)
+        gl.glVertex3f(1.0f*x, 0.905f*x,-1.0f*x);		// Bottom Right Of The Quad (Right)
+        
+        
+        gl.glColor3f(0.12f, 0.56f, 1.0f);               // Set The Color To Azul Furtivo
+        gl.glVertex3f( 0.3f*x, 0.0f*x, 1.0f*x);		// Top Right Of The Quad (Front)
+        gl.glVertex3f(-0.3f*x, 0.0f*x, 1.0f*x);		// Top Left Of The Quad (Front)
+        gl.glVertex3f(-0.3f*x,-0.89f*x, 1.0f*x);	// Bottom Left Of The Quad (Front)
+        gl.glVertex3f( 0.3f*x,-0.89f*x, 1.0f*x);	// Bottom Right Of The Quad (Front)
+        
+        
+        
+        
+      gl.glEnd();
+      gl.glPopMatrix();
         
         
         
