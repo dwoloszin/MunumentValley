@@ -286,7 +286,7 @@ public class TorreArk
         //torre do rei
       gl.glPushMatrix();
       gl.glLoadIdentity();
-      gl.glTranslatef(0.0f, 0.3f, -8.0f);
+      gl.glTranslatef(-0.25f, 0.3f, -8.0f);
       gl.glRotatef(rquad, 0.0f, 1.0f, 0.0f);
       gl.glBegin(GL.GL_QUADS);           	// Draw A Quad
       
