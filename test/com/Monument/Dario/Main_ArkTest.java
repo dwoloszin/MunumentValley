@@ -38,13 +38,13 @@ public class Main_ArkTest {
     }
 
     /**
-     * Test of main method, of class Main_Ark.
+     * Test of main method, of class Main_CENACompleta.
      */
     @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        Main_Ark.main(args);
+        Main_CENACompleta.main(args);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

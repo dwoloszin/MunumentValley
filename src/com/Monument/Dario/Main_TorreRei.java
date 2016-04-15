@@ -16,7 +16,7 @@ import javax.media.opengl.GLCanvas;
  *
  * @author dario.lwoloszin
  */
-public class Main {
+public class Main_TorreRei {
     
     
     public static void main(String[] args){

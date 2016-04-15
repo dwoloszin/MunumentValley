@@ -461,10 +461,10 @@ public class TorreArk
 
        
         final float h = (float) width / (float) height;
-        gl.glViewport(0, 0, width, height);
+        gl.glViewport(0, -90, width, height);
         gl.glMatrixMode(GL.GL_PROJECTION);
         gl.glLoadIdentity();
-        glu.gluPerspective(45.0f, h, 5.0, 50.0);
+        glu.gluPerspective(50.0f, h, 5.0, 50.0);
         gl.glMatrixMode(GL.GL_MODELVIEW);
         gl.glLoadIdentity();
         

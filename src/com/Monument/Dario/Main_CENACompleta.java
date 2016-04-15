@@ -16,7 +16,7 @@ import javax.media.opengl.GLCanvas;
  *
  * @author dario.lwoloszin
  */
-public class Main_Ark {
+public class Main_CENACompleta {
     
     
     public static void main(String[] args){
